@@ -100,7 +100,7 @@ class Map
     if !@map.empty?
       (0...@map.length).each do |i|
         if @map[i][0] == key
-          return key
+          return @map[i][1]
         end
       end
       return  "no such a key"
